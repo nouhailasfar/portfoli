@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+}
+.image {
+  width: 300px;
+  border-radius: 70%;
+  max-width: 80%;
+  margin-left: 300px;
+  
+
+
+}
+
+.image:hover {
+
+  transform: scale(1.2);
+  transition: 1s;
+  border-radius: 20%;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+
+}
+
+
+a {
+  padding: 20px;
+}
+
+a {
+  color: rgb(220, 194, 194);
+  text-decoration: orangered;
+  border-radius: 100%;
+  border: 1px solid black;
+  background-color: rgb(71, 59, 59);
+  font-family: 'Dancing Script', cursive;
+  height: 100;
+  width: 500;
+
+}
+
+a:hover {
+  color: blue;
+  transform: scale(1.2);
+  transition: 1s;
+  background-color: white;
+}
+
+.image-box {
+  flex: 1;
+}
+
+.text-box {
+  flex: 1;
+  padding: 0 1rem;
+
+}
+
+#test {
+  font-weight: 900;
+  color: rgb(242, 226, 226);
+  font-family: 'Playfair', serif; 
+   font-size: large;
+margin: 30px;
+}
+
+#t1 {
+  color: rgb(54, 91, 147);
+  margin: 10px;
+  font-family: 'Playfair', serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Playfair', serif;
+}
+
+.description {
+  font-size: 16px;
+  color: #777;
+}
+@media(max-width:768px){
+  .image-box{
+    display: flex ;
+    justify-content: end;
+  } 
+
+  
+}
+
+

@@ -1,0 +1,62 @@
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.wrapper{
+    display: flex;
+}
+.first-text{
+    font-size: 60px;
+    color: azure;
+    font-family: 'Dancing Script', cursive;
+  
+}
+.wrapper .sec-texts{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.sec-texts li{
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: aqua;
+    list-style: none;
+    top: 0;
+    padding: 0 20px;
+    box-shadow: 0 0 10px #0ef;
+    animation: slide 8s steps(2) infinite, colorful 3s infinite;
+
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+@keyframes colorful {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.sec-texts li span{
+
+    position: relative;
+}
+.sec-texts li span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 90px;
+    background:black;
+    border-left:2px solid #0ef ;
+    animation: typing 1.5s steps(11) infinite alternate;
+
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
